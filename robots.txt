@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://portfolio-karthikeya3342.vercel.app/sitemap.xml
+Sitemap: https://peddusreekanthreddy.vercel.app/sitemap.xml
