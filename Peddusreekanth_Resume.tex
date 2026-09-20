@@ -1,0 +1,150 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[
+    top=0.30in,
+    bottom=0.30in,
+    left=0.50in,
+    right=0.50in
+]{geometry}
+
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\titlespacing{\section}{0pt}{4pt}{2pt}
+
+\setlist[itemize]{
+    leftmargin=1.1em,
+    itemsep=0pt,
+    topsep=0pt,
+    parsep=0pt,
+    partopsep=0pt
+}
+
+\begin{document}
+
+%---------- HEADER ----------
+\begin{center}
+    {\LARGE \textbf{Peddusreekanth Reddy}} \\[2pt]
+    +91-7386783406 \;|\;
+    \href{mailto:peddusreekanthreddy@gmail.com}
+    {peddusreekanthreddy@gmail.com}
+    \;|\;
+    \href{https://www.linkedin.com/in/sreekanth-reddy-peddu-725584342/}{LinkedIn}
+    \;|\;
+    \href{https://github.com/peddusreekanthreddy7}{GitHub}
+    \;|\;
+    \href{https://www.askd.in/}{Portfolio}
+\end{center}
+
+%---------- EDUCATION ----------
+\section{Education}
+
+\textbf{Indian Institute of Information Technology, Design and Manufacturing, Kurnool}
+\hfill Andhra Pradesh, India
+
+B.Tech in Mechanical Engineering
+\hfill Aug. 2024 -- Aug. 2028
+
+\textbf{Relevant Coursework:}
+Data Structures \& Algorithms, Object Oriented Programming, Operating Systems,
+DBMS, Computer Networks, System Design, Linear Algebra, Probability \& Statistics,
+Discrete Mathematics
+
+%---------- PROJECTS ----------
+\section{Projects}
+
+\textbf{DatalakeFaceAuth 2024 -- Mobile AI Face Authentication}
+\hfill
+\href{https://github.com/peddusreekanthreddy7/HACKATHON-7.1}{GitHub}
+\;|\;
+\href{https://drive.google.com/file/d/1D1_aZa0OtnO3WXjK7u3aJQSOe8dDz2fO/view?usp=sharing}{APK}
+
+\begin{itemize}
+    \item Built an offline face authentication system using face detection, alignment, anti-spoofing, and face recognition.
+    \item Reduced the AI pipeline to 6.71 MB using INT8 quantization while achieving 173--190 ms recognition and liveness detection.
+    \item Built secure data synchronization using AES-256 encryption, AWS Lambda, and DynamoDB.
+\end{itemize}
+
+\textbf{CareerOS -- Autonomous Multi-Agent Career Optimization Engine}
+\hfill
+\href{https://github.com/peddusreekanthreddy7/careeross}{GitHub}
+\;|\;
+\href{https://youtu.be/9cqEbAvRIYY?si=-A6D0WofPAe8BnLi}{Demo}
+
+\begin{itemize}
+    \item Built an automated job search system using Python, FastAPI, Playwright, and JobSpy to collect jobs from multiple platforms and generate daily job digests.
+    \item Developed a multi-agent system using Gemini, Llama, and CascadeFlow to tailor resumes to job descriptions and check ATS compatibility.
+    \item Built a LaTeX compiler agent that detects compilation errors and automatically fixes resume formatting before generating the final PDF.
+\end{itemize}
+
+\textbf{askd -- AI-Powered Exam Answer Script Evaluation Platform}
+\hfill
+\href{https://www.askd.in/}{Live}
+
+\begin{itemize}
+    \item Built an AI pipeline to evaluate handwritten exam answers using OCR, rubric-based checking, and automated scoring.
+    \item Used the question paper as context to improve handwriting recognition and generate structured text, equations, tables, and diagrams.
+    \item Scaled the platform to 20 paying institutional customers while handling product development and client requirements.
+\end{itemize}
+
+\textbf{FinAccess 2024 -- Explainable Credit Risk Engine}
+\hfill
+\href{https://github.com/peddusreekanthreddy7/fin_access}{GitHub}
+
+\begin{itemize}
+    \item Built a FastAPI-based credit risk system using XGBoost and SHAP, supporting 100 concurrent users with 0\% failure rate.
+    \item Combined XGBoost and Graph Convolutional Networks to analyze financial risk, achieving 94.31\% accuracy and 0.957 ROC-AUC.
+    \item Added SHAP-based explanations and fairness checks to make model predictions easier to understand.
+\end{itemize}
+
+\textbf{Intelligent Traffic Analysis System -- Real-Time Traffic Monitoring}
+\hfill
+\href{https://github.com/peddusreekanthreddy7/traffic-analysis-}{GitHub}
+\;|\;
+\href{https://youtu.be/JzggnaPxmZU?si=NOQ2H9EeKv0WUNBY}{Demo}
+
+\begin{itemize}
+    \item Built a computer vision system using YOLOv8/YOLOv11 and OpenCV to detect and track cars, buses, trucks, and motorcycles.
+    \item Implemented vehicle tracking and lane congestion analysis using ByteTrack/SORT with real-time vehicle counts and queue density.
+    \item Added red-light and rash-driving detection with a Streamlit dashboard for traffic monitoring and data export.
+\end{itemize}
+
+%---------- TECHNICAL SKILLS ----------
+\section{Technical Skills}
+
+\begin{itemize}
+    \item \textbf{Languages:} Java, Python, C, C++, JavaScript, SQL
+    \item \textbf{Computer Science:} Data Structures \& Algorithms (400+ problems), OOP, Operating Systems, DBMS, Computer Networks, System Design
+    \item \textbf{Mathematics:} Linear Algebra, Probability \& Statistics, Discrete Mathematics
+    \item \textbf{Web \& Backend:} React, Node.js, FastAPI, REST APIs, PostgreSQL
+    \item \textbf{Cloud:} AWS Lambda, DynamoDB, Render, Vercel, Supabase
+    \item \textbf{AI \& Machine Learning:} Vision Language Models, XGBoost, ANN, CNN, SHAP, Scikit-learn, LangChain, RAG
+    \item \textbf{Computer Vision:} YOLOv8, YOLOv11, OpenCV, ByteTrack, SORT
+\end{itemize}
+
+%---------- ACHIEVEMENTS ----------
+\section{Achievements}
+
+\begin{itemize}
+    \item \textbf{Smart India Hackathon:} Internal First Place, Team Leader.
+    \item \textbf{RizeOS Hackathon:} 3rd Place, Team Leader; cleared all 3 rounds with a score of 71.1 points.
+    \item \textbf{Hackathons:} Participated in 15+ hackathons; 3rd Place, Netrik Hackathon, Team Leader.
+    \item \textbf{askd:} Secured institutional funding for AI startup MVP.
+    \item \textbf{National INTSO Olympiad:} Topper, awarded laptop, featured in press.
+    \item \textbf{Startup Idea Pitching:} 1st Place; recognized in press associated with Dr. BVR Mohan Reddy, Chairman, Cyient.
+\end{itemize}
+
+\end{document}

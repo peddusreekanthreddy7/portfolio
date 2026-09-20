@@ -1,0 +1,1961 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Peddusreekanth Reddy - Portfolio. B.Tech Student @ IIITDM Kurnool. AI/ML Engineer, Multi-Agent Systems, Computer Vision Builder & Founder of askd.">
+    <meta name="keywords" content="Peddusreekanth Reddy, Sreekanth Reddy, IIITDM Kurnool, AI/ML Engineer, Computer Vision, Full Stack Developer, askd, FastAPI, PyTorch, Multi-Agent Systems, Portfolio">
+    <meta name="author" content="Peddusreekanth Reddy">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://peddusreekanthreddy.vercel.app/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://peddusreekanthreddy.vercel.app/">
+    <meta property="og:title" content="PEDDUSREEKANTH REDDY | AI/ML Engineer & Systems Builder">
+    <meta property="og:description" content="B.Tech @ IIITDM Kurnool. Building AI systems, multi-agent workflows, computer vision pipelines, and scalable applications.">
+    <meta property="og:image" content="https://peddusreekanthreddy.vercel.app/portfolio_preview.png">
+    <meta property="og:site_name" content="Peddusreekanth Reddy Portfolio">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://peddusreekanthreddy.vercel.app/">
+    <meta property="twitter:title" content="PEDDUSREEKANTH REDDY | AI/ML Engineer & Systems Builder">
+    <meta property="twitter:description" content="B.Tech @ IIITDM Kurnool. Building AI systems, multi-agent workflows, and scalable tech products.">
+
+    <title>PEDDUSREEKANTH REDDY | AI/ML Engineer & Systems Builder</title>
+    <meta name="theme-color" content="#121212">
+
+    <!-- JSON-LD Structured Data for Rich Results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Peddusreekanth Reddy",
+      "url": "https://peddusreekanthreddy.vercel.app/",
+      "jobTitle": "AI/ML Engineer & Systems Builder",
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "IIITDM Kurnool",
+        "alternateName": "Indian Institute of Information Technology Design and Manufacturing, Kurnool"
+      },
+      "knowsAbout": [
+        "Python", "Java", "C", "C++", "JavaScript", "SQL", "FastAPI", "React", "Node.js",
+        "AI/ML", "Computer Vision", "YOLO", "OpenCV", "Multi-Agent Systems", "LangChain", "RAG", "AWS Lambda"
+      ],
+      "sameAs": [
+        "https://github.com/peddusreekanthreddy7",
+        "https://www.linkedin.com/in/sreekanth-reddy-peddu-725584342/",
+        "https://www.askd.in/"
+      ]
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'neo-yellow': '#FBFF48',
+                        'neo-pink': '#FF70A6',
+                        'neo-blue': '#3B82F6',
+                        'neo-green': '#33FF57',
+                        'neo-purple': '#A855F7',
+                        'neo-orange': '#FF9F1C',
+                        'neo-red': '#FF2A2A',
+                        'neo-white': '#FFFDF5',
+                        'neo-black': '#121212',
+                    },
+                    fontFamily: {
+                        'display': ['"Space Grotesk"', 'sans-serif'],
+                        'mono': ['"JetBrains Mono"', 'monospace'],
+                    },
+                    boxShadow: {
+                        'hard': '4px 4px 0px 0px #000',
+                        'hard-sm': '2px 2px 0px 0px #000',
+                        'hard-lg': '8px 8px 0px 0px #000',
+                        'hard-xl': '12px 12px 0px 0px #000',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            cursor: none;
+            background-color: #FFFDF5;
+            background-image:
+                radial-gradient(#000 1px, transparent 1px),
+                linear-gradient(to right, #e5e5e5 1px, transparent 1px),
+                linear-gradient(to bottom, #e5e5e5 1px, transparent 1px);
+            background-size: 40px 40px, 100px 100px, 100px 100px;
+        }
+
+        #cursor {
+            pointer-events: none;
+            position: fixed;
+            z-index: 9999;
+            mix-blend-mode: difference;
+            transition: width 0.2s, height 0.2s, background-color 0.2s, transform 0.1s;
+        }
+
+        .marquee-container {
+            overflow: hidden;
+        }
+
+        .marquee-content {
+            display: flex;
+            animation: scroll 40s linear infinite;
+            width: max-content;
+        }
+
+        .marquee-container:hover .marquee-content {
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .marquee-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .marquee-container {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-60px);
+            transition: all 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .reveal-left.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(60px);
+            transition: all 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .reveal-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .reveal-scale {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .reveal-scale.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .glitch-hover:hover {
+            animation: glitch-anim 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
+            color: #FF2A2A;
+        }
+
+        @keyframes glitch-anim {
+            0% {
+                transform: translate(0)
+            }
+
+            20% {
+                transform: translate(-2px, 2px)
+            }
+
+            40% {
+                transform: translate(-2px, -2px)
+            }
+
+            60% {
+                transform: translate(2px, 2px)
+            }
+
+            80% {
+                transform: translate(2px, -2px)
+            }
+
+            100% {
+                transform: translate(0)
+            }
+        }
+
+        @keyframes typewriter {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent
+            }
+        }
+
+        .typewriter {
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid #33FF57;
+            animation: typewriter 3s steps(40) 2.5s forwards, blink 0.7s step-end infinite;
+            width: 0;
+        }
+
+        @keyframes float {
+            0%,
+            100% {
+                transform: translateY(0) rotate(12deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(12deg);
+            }
+        }
+
+        .float-anim {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float2 {
+            0%,
+            100% {
+                transform: translateY(0) rotate(-6deg);
+            }
+
+            50% {
+                transform: translateY(-15px) rotate(-6deg);
+            }
+        }
+
+        .float-anim-2 {
+            animation: float2 4s ease-in-out infinite;
+        }
+
+        .stagger-1 {
+            transition-delay: 0.1s;
+        }
+
+        .stagger-2 {
+            transition-delay: 0.2s;
+        }
+
+        .stagger-3 {
+            transition-delay: 0.3s;
+        }
+
+        .stagger-4 {
+            transition-delay: 0.4s;
+        }
+
+        .stagger-5 {
+            transition-delay: 0.5s;
+        }
+
+        .stagger-6 {
+            transition-delay: 0.6s;
+        }
+
+        .tilt-card {
+            transition: transform 0.3s ease;
+        }
+
+        .tilt-card:hover {
+            transform: perspective(1000px) rotateX(2deg) rotateY(-3deg) scale(1.02);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                cursor: auto;
+            }
+
+            #cursor {
+                display: none !important;
+            }
+        }
+
+        /* === LOADER === */
+        .loader-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #FBFF48;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+            z-index: 99999;
+            transition: opacity 0.6s ease, visibility 0.6s ease;
+        }
+
+        .loader-overlay.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .loader-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .loader-shape-svg {
+            position: absolute;
+        }
+
+        .loader-shape-1 {
+            top: 15%;
+            left: 10%;
+            animation: float-deco 3s ease-in-out infinite;
+        }
+
+        .loader-shape-2 {
+            top: 20%;
+            right: 15%;
+            animation: float-deco 3s ease-in-out 0.5s infinite;
+        }
+
+        .loader-shape-3 {
+            bottom: 20%;
+            left: 15%;
+            animation: float-deco 3s ease-in-out 1s infinite;
+        }
+
+        .loader-shape-4 {
+            bottom: 25%;
+            right: 10%;
+            animation: float-deco 3s ease-in-out 1.5s infinite;
+        }
+
+        @keyframes float-deco {
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-15px) rotate(15deg);
+            }
+        }
+
+        /* Terminal Themes */
+        .terminal-theme-default {
+            background-color: #1e1e1e !important;
+            color: #f8f8f2 !important;
+        }
+
+        .terminal-theme-dracula {
+            background-color: #282a36 !important;
+            color: #f8f8f2 !important;
+        }
+
+        .terminal-theme-solarized {
+            background-color: #002b36 !important;
+            color: #839496 !important;
+        }
+
+        .terminal-theme-nord {
+            background-color: #2e3440 !important;
+            color: #eceff4 !important;
+        }
+    </style>
+</head>
+
+<body class="text-neo-black font-display overflow-x-hidden selection:bg-neo-pink selection:text-black">
+
+    <!-- Custom Cursor -->
+    <div id="cursor" class="w-6 h-6 rounded-full bg-white fixed pointer-events-none z-[9999] mix-blend-difference hidden md:block"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="progressBar" class="fixed top-0 left-0 h-2 bg-neo-red z-[100] transition-all duration-75 border-b border-black" style="width: 0%;"></div>
+
+    <!-- LOADER -->
+    <div id="loaderOverlay" class="loader-overlay">
+        <div class="loader-shapes">
+            <div class="loader-shape-svg loader-shape-1 w-12 h-12 bg-neo-pink border-4 border-black shadow-hard rotate-12"></div>
+            <div class="loader-shape-svg loader-shape-2 w-14 h-14 bg-neo-green rounded-full border-4 border-black shadow-hard"></div>
+            <div class="loader-shape-svg loader-shape-3 w-10 h-10 bg-neo-blue border-4 border-black shadow-hard rotate-45"></div>
+            <div class="loader-shape-svg loader-shape-4 w-16 h-16 bg-neo-purple border-4 border-black shadow-hard -rotate-12"></div>
+        </div>
+        <div class="relative z-10 text-center">
+            <div class="bg-black text-white px-8 py-4 border-4 border-black shadow-hard-lg font-black text-3xl md:text-5xl uppercase tracking-tighter mb-6">
+                PEDDUSREEKANTH REDDY
+            </div>
+            <div class="font-mono text-sm md:text-base font-bold text-black bg-white px-4 py-2 border-2 border-black inline-block shadow-hard">
+                INITIALIZING AI PIPELINE...
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 p-4 transition-all">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#"
+                class="bg-neo-white border-2 border-black px-4 py-1 text-2xl font-black shadow-hard hover:bg-neo-yellow transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none cursor-hover">
+                SREEKANTH.dev
+            </a>
+            <div class="hidden md:flex gap-4 bg-white border-2 border-black p-2 shadow-hard">
+                <a href="#about"
+                    class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover">/ABOUT</a>
+                <a href="#education"
+                    class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover">/EDU</a>
+                <a href="#skills"
+                    class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover">/SKILLS</a>
+                <a href="#projects"
+                    class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover">/WORK</a>
+                <a href="#achievements"
+                    class="px-3 py-1 font-mono font-bold text-sm hover:bg-black hover:text-white transition-colors cursor-hover">/AWARDS</a>
+                <a href="#contact"
+                    class="px-3 py-1 font-mono font-bold text-sm bg-neo-yellow border border-black hover:bg-neo-pink transition-colors cursor-hover">HIRE
+                    ME</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+    <!-- HERO -->
+    <section
+        class="min-h-screen flex flex-col justify-center items-center px-4 pt-20 relative overflow-hidden border-b-4 border-black">
+        <div
+            class="absolute top-1/3 left-[10%] w-16 h-16 bg-neo-blue border-4 border-black shadow-hard float-anim hidden lg:block">
+        </div>
+        <div
+            class="absolute bottom-1/4 right-[8%] w-20 h-20 bg-neo-pink rounded-full border-4 border-black shadow-hard hidden lg:block animate-pulse">
+        </div>
+        <div
+            class="absolute top-1/4 right-[15%] w-12 h-12 bg-neo-yellow border-4 border-black shadow-hard float-anim-2 hidden lg:block">
+        </div>
+        <div
+            class="absolute bottom-1/3 left-[15%] w-14 h-14 bg-neo-green rounded-lg border-4 border-black shadow-hard hidden lg:block float-anim-2">
+        </div>
+        <div class="absolute top-20 right-20 text-9xl opacity-5 font-black select-none pointer-events-none">BUILD</div>
+        <div
+            class="absolute bottom-20 left-10 text-8xl opacity-[0.03] font-black select-none pointer-events-none rotate-[-10deg]">
+            SHIP IT</div>
+
+        <div class="relative z-10 text-center max-w-5xl px-4">
+            <div
+                class="inline-block bg-neo-white border-2 border-black px-4 py-1 mb-6 shadow-hard rotate-[-2deg] reveal max-w-full overflow-hidden">
+                <span class="font-mono font-bold text-neo-green bg-black px-2 mr-2">&#9679;</span>
+                <span class="font-mono font-bold text-xs sm:text-sm">SYSTEM STATUS: ONLINE <span
+                        class="hidden sm:inline">&bull; FOUNDER &amp; LEAD @ ASKD &bull; IIITDM KURNOOL</span></span>
+            </div>
+
+            <h1
+                class="text-5xl sm:text-7xl md:text-[9.5vw] leading-[0.85] font-black uppercase tracking-tighter mb-6 reveal mix-blend-darken">
+                BUILDER &<br>
+                <span class="text-white" style="-webkit-text-stroke: 3px black;">CREATOR</span>
+            </h1>
+
+            <!-- Typewriter -->
+            <div class="flex justify-center mb-8">
+                <div
+                    class="bg-neo-black px-6 py-3 border-2 border-black shadow-hard inline-block max-w-[90%] overflow-hidden">
+                    <span class="font-mono text-neo-green text-xs sm:text-sm md:text-lg typewriter truncate block">$
+                        sreekanth --founder --build --ship</span>
+                </div>
+            </div>
+
+            <p
+                class="font-mono text-sm sm:text-lg md:text-2xl max-w-2xl mx-4 sm:mx-auto mb-10 bg-neo-yellow border-2 border-black p-3 sm:p-4 shadow-hard reveal rotate-1">
+                Founder &amp; Lead AI Engineer @ <b>askd</b> &bull; Systems Builder.<br>
+                <b class="text-xs sm:text-base">Python &bull; FastAPI &bull; Vision AI &bull; YOLO &bull; OpenCV &bull; Multi-Agents &bull; React</b>
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 reveal px-4">
+                <a href="#projects"
+                    class="bg-black text-white border-2 border-black px-6 py-3 sm:px-10 sm:py-5 text-lg sm:text-xl font-bold shadow-hard hover:bg-neo-green hover:text-black hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all cursor-hover text-center">
+                    VIEW DATABASE
+                </a>
+                <a href="Peddusreekanth_Resume.pdf" download="Peddusreekanth_Reddy_Resume.pdf" target="_blank"
+                    class="bg-neo-white text-black border-2 border-black px-6 py-3 sm:px-10 sm:py-5 text-lg sm:text-xl font-bold shadow-hard hover:bg-neo-pink hover:text-black hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all cursor-hover flex items-center justify-center gap-2">
+                    <i class="ri-download-line"></i> DOWNLOAD CV
+                </a>
+            </div>
+        </div>
+
+        <!-- Rain Sprinkler Button -->
+        <div
+            class="relative sm:absolute mt-8 sm:mt-0 bottom-auto right-auto sm:bottom-24 sm:right-8 z-20 scale-75 sm:scale-100 origin-bottom-right">
+            <button id="rain-btn" onclick="triggerRain()"
+                class="w-36 h-48 flex flex-col items-center justify-center hover:scale-110 transition-all cursor-hover"
+                title="Click to trigger rain!">
+                <img src="fire-hydrant-removebg-preview.png" alt="Fire Hydrant"
+                    class="w-32 h-36 object-contain filter drop-shadow-[4px_4px_0px_rgba(0,0,0,1)]">
+                <span
+                    class="text-[10px] font-mono font-bold bg-white text-black border border-black px-2 py-1 mt-1 shadow-[2px_2px_0px_rgba(0,0,0,1)] uppercase tracking-wider">click
+                    to make it rain!</span>
+            </button>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
+            <span class="font-mono text-xs text-gray-400">SCROLL</span>
+            <i class="ri-arrow-down-s-line text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="border-b-4 border-black bg-neo-red py-3 relative z-20">
+        <div class="marquee-container overflow-hidden font-mono font-bold text-2xl text-white">
+            <div class="marquee-content">
+                /// AI/ML & MULTI-AGENTS /// COMPUTER VISION /// FASTAPI & REACT /// 1ST PLACE SMART INDIA HACKATHON /// ASKD FOUNDER /// 15+ HACKATHONS
+                /// AI/ML & MULTI-AGENTS /// COMPUTER VISION /// FASTAPI & REACT /// 1ST PLACE SMART INDIA HACKATHON /// ASKD FOUNDER /// 15+ HACKATHONS
+                ///
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about"
+        class="py-12 sm:py-24 px-4 sm:px-8 max-w-7xl mx-4 md:mx-auto border-4 border-black bg-white my-12 shadow-hard-lg">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+            <div class="md:col-span-4 reveal-left">
+                <div
+                    class="aspect-[3/4] bg-gray-200 border-4 border-black relative shadow-hard overflow-hidden group tilt-card">
+                    <img src="images/about/headshot.jpeg" alt="Peddusreekanth Reddy"
+                        class="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-500">
+                    <span
+                        class="absolute top-2 left-2 bg-neo-red text-white px-2 font-mono text-xs border border-black z-10">AVATAR.JPG</span>
+                    <div
+                        class="absolute bottom-0 left-0 right-0 bg-black/80 p-3 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        <p class="font-mono text-neo-green text-xs">Peddusreekanth Reddy</p>
+                        <p class="font-mono text-white text-xs">IIITDM Kurnool &bull; 2024–2028</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:col-span-8 flex flex-col justify-center reveal-right">
+                <h2 class="text-4xl sm:text-6xl font-black uppercase mb-6">Who am I?</h2>
+                <p class="font-mono text-base sm:text-xl leading-relaxed mb-6">
+                    I'm Peddusreekanth Reddy — an AI/ML engineer and builder at <span class="bg-neo-yellow px-1 border border-black">IIITDM Kurnool</span> who constructs production-grade machine learning pipelines, multi-agent frameworks, and high-performance vision systems.
+                </p>
+                <p class="font-mono text-sm sm:text-lg mb-8 text-gray-600 border-l-4 border-neo-purple pl-4">
+                    > Founder of <span class="bg-neo-green px-1 border border-black text-black font-bold">askd</span> — AI Exam Answer Script Evaluation with 20 paying institutional clients.<br>
+                    > B.Tech @ IIITDM Kurnool &bull; Batch 2024–2028<br>
+                    > 15+ Hackathons &bull; Smart India Hackathon Winner &bull; 400+ DSA Problems Solved.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <div class="bg-neo-black text-white px-4 py-2 font-mono text-sm border-2 border-transparent">
+                        &#128205; Andhra Pradesh, India</div>
+                    <div class="bg-neo-green text-black px-4 py-2 font-mono text-sm border-2 border-black">&#128994;
+                        OPEN FOR OPPORTUNITIES</div>
+                    <div class="bg-neo-yellow text-black px-4 py-2 font-mono text-sm border-2 border-black">&#127942;
+                        SMART INDIA HACKATHON — 1ST PLACE</div>
+                    <div class="bg-neo-purple text-white px-4 py-2 font-mono text-sm border-2 border-black">&#127891;
+                        IIITDM KURNOOL (2024–2028)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE TERMINAL SECTION -->
+    <section id="terminal-section" class="py-12 px-4 max-w-4xl mx-4 md:mx-auto reveal">
+        <div class="bg-neo-white border-4 border-black shadow-hard-xl overflow-hidden rounded-lg">
+            <!-- Window Header -->
+            <div
+                class="bg-neo-black text-white px-4 py-3 border-b-4 border-black flex items-center justify-between font-mono text-sm select-none">
+                <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-neo-red border border-black inline-block"></span>
+                    <span class="w-3 h-3 rounded-full bg-neo-yellow border border-black inline-block"></span>
+                    <span class="w-3 h-3 rounded-full bg-neo-green border border-black inline-block"></span>
+                </div>
+                <div class="font-bold flex items-center gap-2 text-xs sm:text-sm">
+                    <i class="ri-terminal-box-line"></i> <span class="hidden sm:inline">sreekanth@portfolio: </span>~
+                </div>
+                <div class="flex items-center gap-2">
+                    <button onclick="setTerminalTheme('default')" class="w-4 h-4 bg-white border border-black rounded"
+                        title="Default Theme"></button>
+                    <button onclick="setTerminalTheme('dracula')"
+                        class="w-4 h-4 bg-[#282a36] border border-black rounded" title="Dracula Theme"></button>
+                    <button onclick="setTerminalTheme('solarized')"
+                        class="w-4 h-4 bg-[#002b36] border border-black rounded" title="Solarized Theme"></button>
+                    <button onclick="setTerminalTheme('nord')" class="w-4 h-4 bg-[#2e3440] border border-black rounded"
+                        title="Nord Theme"></button>
+                </div>
+            </div>
+            <!-- Window Body -->
+            <div id="terminal-body"
+                class="terminal-container terminal-theme-default bg-[#1e1e1e] text-[#f8f8f2] p-4 md:p-6 font-mono text-xs sm:text-sm min-h-[350px] max-h-[450px] overflow-y-auto cursor-text transition-colors duration-300">
+                <div class="mb-4 text-neo-yellow font-bold leading-relaxed">
+                    📟 Welcome to Peddusreekanth Reddy's Interactive CLI Resume!<br>
+                    Type <span class="text-neo-green font-bold">'help'</span> to explore available commands.
+                </div>
+                <div id="terminal-history" class="space-y-2"></div>
+                <!-- Current Line -->
+                <div class="flex flex-wrap items-center gap-x-2 gap-y-1 mt-2">
+                    <span class="terminal-prompt text-neo-green font-bold"><span
+                            class="hidden sm:inline">sreekanth@portfolio:</span>~$</span>
+                    <input type="text" id="terminal-input"
+                        class="bg-transparent border-none outline-none flex-1 min-w-0 text-inherit font-mono focus:ring-0 p-0 text-base sm:text-sm"
+                        autocomplete="off" placeholder="Type here...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="py-12 sm:py-24 px-4 max-w-7xl mx-4 md:mx-auto relative">
+        <h2 class="text-4xl sm:text-6xl md:text-8xl font-black uppercase mb-4 tracking-tighter text-center reveal">
+            Education<span class="text-neo-blue">_Path</span>
+        </h2>
+        <p class="text-center font-mono text-sm text-gray-400 mb-16 reveal">// click the score badges to celebrate 🎉 •
+            drag the stickers around ↕</p>
+
+        <!-- Draggable Achievement Stickers -->
+        <div class="edu-sticker" id="sticker-10th"
+            style="position:absolute; top:30px; right:60px; z-index:30; cursor:grab; user-select:none;">
+            <div
+                class="bg-neo-red text-white px-4 py-2 font-black font-mono text-sm border-4 border-black shadow-hard rotate-[8deg] hover:rotate-0 transition-transform">
+                🔥 10th: 600 / 600 (100%)
+            </div>
+        </div>
+        <div class="edu-sticker" id="sticker-12th"
+            style="position:absolute; top:80px; left:40px; z-index:30; cursor:grab; user-select:none;">
+            <div
+                class="bg-neo-green text-black px-4 py-2 font-black font-mono text-sm border-4 border-black shadow-hard rotate-[-6deg] hover:rotate-0 transition-transform">
+                ⚡ 12th: 90.1%
+            </div>
+        </div>
+        <div class="edu-sticker" id="sticker-intso"
+            style="position:absolute; bottom:40px; right:80px; z-index:30; cursor:grab; user-select:none;">
+            <div
+                class="bg-neo-purple text-white px-4 py-2 font-black font-mono text-sm border-4 border-black shadow-hard rotate-[4deg] hover:rotate-0 transition-transform">
+                🏆 INTSO Olympiad Topper
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+            <!-- IIITDM Kurnool -->
+            <div
+                class="reveal stagger-1 tilt-card bg-white border-4 border-black p-6 shadow-hard hover:shadow-hard-xl transition-all relative overflow-hidden group">
+                <div class="absolute top-0 left-0 w-full h-2 bg-neo-red"></div>
+                <div class="flex items-center gap-2 mb-4">
+                    <div
+                        class="w-10 h-10 bg-neo-red text-white flex items-center justify-center border-2 border-black font-black text-lg">
+                        01</div>
+                    <span class="font-mono text-xs text-gray-400">2024 - 2028</span>
+                </div>
+                <h3 class="text-2xl font-black uppercase mb-2">IIITDM Kurnool</h3>
+                <p class="font-mono text-neo-red font-bold mb-4">B.Tech in Mechanical Engineering</p>
+                <!-- Interactive Details -->
+                <div class="space-y-3 font-mono text-sm text-gray-600">
+                    <div class="border-b border-dashed border-gray-200 pb-2">
+                        <span class="font-bold text-neo-black block mb-1">Key Coursework:</span>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            DSA, OOP, Operating Systems, DBMS, Computer Networks, System Design, Linear Algebra, Probability & Statistics, Discrete Mathematics.
+                        </p>
+                    </div>
+                    <div class="flex justify-between border-b border-dashed border-gray-200 pb-1">
+                        <span>Institution</span>
+                        <span class="font-bold text-neo-black">IIITDM Kurnool, AP</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Batch</span>
+                        <span class="font-bold text-neo-black">Aug 2024 – Aug 2028</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Intermediate (12th) -->
+            <div
+                class="reveal stagger-2 tilt-card bg-white border-4 border-black p-6 shadow-hard hover:shadow-hard-xl transition-all relative overflow-hidden group">
+                <div class="absolute top-0 left-0 w-full h-2 bg-neo-blue"></div>
+                <div class="flex items-center gap-2 mb-4">
+                    <div
+                        class="w-10 h-10 bg-neo-blue text-white flex items-center justify-center border-2 border-black font-black text-lg">
+                        02</div>
+                    <span class="font-mono text-xs text-gray-400">2022 - 2024</span>
+                </div>
+                <h3 class="text-2xl font-black uppercase mb-2">Intermediate (12th)</h3>
+                <p class="font-mono text-neo-blue font-bold mb-1">Class XII — MPC</p>
+                <p class="font-mono text-xs text-gray-400 mb-4">Mathematics, Physics & Chemistry</p>
+                <div class="space-y-3 font-mono text-sm text-gray-600">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>Score Percentage</span>
+                            <span
+                                class="score-badge font-bold text-lg text-neo-blue cursor-pointer hover:scale-125 transition-transform inline-block"
+                                data-score="90.1" onclick="popScore(this)">90.1%</span>
+                        </div>
+                        <div class="w-full h-3 bg-gray-100 border-2 border-black overflow-hidden">
+                            <div class="score-bar h-full bg-neo-blue" data-target="90.1"
+                                style="width:0%; transition: width 1.5s cubic-bezier(0.22, 1, 0.36, 1) 0.2s;"></div>
+                        </div>
+                    </div>
+                    <div class="mt-4 bg-neo-blue/10 border border-neo-blue p-2 font-mono text-xs">
+                        ⚡ Strong analytical and mathematical foundation
+                    </div>
+                </div>
+            </div>
+
+            <!-- Secondary School (10th) -->
+            <div
+                class="reveal stagger-3 tilt-card bg-white border-4 border-black p-6 shadow-hard hover:shadow-hard-xl transition-all relative overflow-hidden group">
+                <div class="absolute top-0 left-0 w-full h-2 bg-neo-green"></div>
+                <div class="flex items-center gap-2 mb-4">
+                    <div
+                        class="w-10 h-10 bg-neo-green text-black flex items-center justify-center border-2 border-black font-black text-lg">
+                        03</div>
+                    <span class="font-mono text-xs text-gray-400">Passed 2022</span>
+                </div>
+                <h3 class="text-2xl font-black uppercase mb-2">Secondary School (10th)</h3>
+                <p class="font-mono text-neo-green font-bold mb-1">Class X Board Exam</p>
+                <p class="font-mono text-xs text-gray-400 mb-4">Perfect Score Achievement</p>
+                <div class="space-y-3 font-mono text-sm text-gray-600">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>Score</span>
+                            <span
+                                class="score-badge font-bold text-lg text-neo-green cursor-pointer hover:scale-125 transition-transform inline-block"
+                                data-score="600" onclick="popScore(this)">600 / 600</span>
+                        </div>
+                        <div class="w-full h-3 bg-gray-100 border-2 border-black overflow-hidden">
+                            <div class="score-bar h-full bg-neo-green" data-target="100"
+                                style="width:0%; transition: width 1.5s cubic-bezier(0.22, 1, 0.36, 1);"></div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Percentage</span>
+                        <span
+                            class="score-badge font-bold text-lg text-neo-black cursor-pointer hover:scale-125 transition-transform inline-block"
+                            data-score="100" onclick="popScore(this)">100% (Perfect Score)</span>
+                    </div>
+                </div>
+                <div class="mt-4 bg-neo-green/20 border border-neo-green p-2 font-mono text-xs">
+                    🏆 National INTSO Olympiad Topper &bull; Laptop Awardee
+                </div>
+            </div>
+        </div>
+
+        <!-- Particle container for score celebrations -->
+        <div id="edu-particles"
+            style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9998;overflow:hidden;">
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-20 bg-neo-black text-neo-white border-y-4 border-black relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20"
+            style="background-image: linear-gradient(#333 1px, transparent 1px), linear-gradient(90deg, #333 1px, transparent 1px); background-size: 40px 40px;">
+        </div>
+        <div class="max-w-[1400px] mx-auto px-4 relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b-4 border-white pb-4">
+                <h2 class="text-4xl sm:text-6xl md:text-8xl font-black uppercase text-white tracking-tighter">
+                    TECH<span class="text-neo-green">_STACK</span>
+                </h2>
+                <div class="flex items-center gap-2 mb-2 md:mb-4">
+                    <div class="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+                    <p class="font-mono text-neo-green text-sm font-bold">/// SYSTEM_OPTIMIZED</p>
+                </div>
+            </div>
+
+            <div
+                class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 border-l border-t border-white/20">
+                <div
+                    class="group h-24 border-r border-b border-white/20 bg-neo-black hover:bg-neo-blue transition-all duration-0 hover:z-10 cursor-hover flex flex-col items-center justify-center p-2">
+                    <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LANGUAGE</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg md:text-xl uppercase">PYTHON</div>
+                </div>
+                <div
+                    class="group h-24 border-r border-b border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 cursor-hover flex flex-col items-center justify-center p-2">
+                    <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LANGUAGE</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg md:text-xl uppercase">JAVA</div>
+                </div>
+                <div
+                    class="group h-24 border-r border-b border-white/20 bg-neo-black hover:bg-neo-pink transition-all duration-0 hover:z-10 cursor-hover flex flex-col items-center justify-center p-2">
+                    <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LANGUAGE</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg md:text-xl uppercase">C / C++</div>
+                </div>
+                <div
+                    class="group h-24 border-r border-b border-white/20 bg-neo-black hover:bg-neo-yellow transition-all duration-0 hover:z-10 cursor-hover flex flex-col items-center justify-center p-2">
+                    <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ LANGUAGE</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg md:text-xl uppercase">JAVASCRIPT</div>
+                </div>
+                <div
+                    class="group h-24 border-r border-b border-white/20 bg-neo-black hover:bg-neo-green transition-all duration-0 hover:z-10 cursor-hover flex flex-col items-center justify-center p-2">
+                    <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ AI/ML</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg md:text-xl uppercase">XGBOOST</div>
+                </div>
+                <div
+                    class="group h-24 border-r border-b border-white/20 bg-neo-black hover:bg-neo-purple transition-all duration-0 hover:z-10 cursor-hover flex flex-col items-center justify-center p-2">
+                    <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ AI/ML</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg md:text-xl uppercase">GCN & SHAP</div>
+                </div>
+                <div
+                    class="group h-24 border-r border-b border-white/20 bg-neo-black hover:bg-neo-orange transition-all duration-0 hover:z-10 cursor-hover flex flex-col items-center justify-center p-2">
+                    <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ CV</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg md:text-xl uppercase">YOLOv8/v11</div>
+                </div>
+                <div
+                    class="group h-24 border-r border-b border-white/20 bg-neo-black hover:bg-neo-blue transition-all duration-0 hover:z-10 cursor-hover flex flex-col items-center justify-center p-2">
+                    <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ CV</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg md:text-xl uppercase">OPENCV</div>
+                </div>
+                <div
+                    class="group h-24 border-r border-b border-white/20 bg-neo-black hover:bg-neo-yellow transition-all duration-0 hover:z-10 cursor-hover flex flex-col items-center justify-center p-2">
+                    <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ BACKEND</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg md:text-xl uppercase">FASTAPI</div>
+                </div>
+                <div
+                    class="group h-24 border-r border-b border-white/20 bg-neo-black hover:bg-neo-pink transition-all duration-0 hover:z-10 cursor-hover flex flex-col items-center justify-center p-2">
+                    <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ WEB</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg md:text-xl uppercase">REACT / NODE</div>
+                </div>
+                <div
+                    class="group h-24 border-r border-b border-white/20 bg-neo-black hover:bg-neo-green transition-all duration-0 hover:z-10 cursor-hover flex flex-col items-center justify-center p-2">
+                    <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ AGENTS</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg md:text-xl uppercase">LANGCHAIN/RAG</div>
+                </div>
+                <div
+                    class="group h-24 border-r border-b border-white/20 bg-neo-black hover:bg-neo-purple transition-all duration-0 hover:z-10 cursor-hover flex flex-col items-center justify-center p-2">
+                    <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ CLOUD</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg md:text-xl uppercase">AWS LAMBDA</div>
+                </div>
+                <div
+                    class="group h-24 border-r border-b border-white/20 bg-neo-black hover:bg-neo-orange transition-all duration-0 hover:z-10 cursor-hover flex flex-col items-center justify-center p-2">
+                    <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ DATA</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg md:text-xl uppercase">POSTGRES / DYNAMO</div>
+                </div>
+                <div
+                    class="group h-24 border-r border-b border-white/20 bg-neo-black hover:bg-white transition-all duration-0 hover:z-10 cursor-hover flex flex-col items-center justify-center p-2">
+                    <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ OPTIMIZATION</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg md:text-xl uppercase">INT8 QUANT</div>
+                </div>
+                <div
+                    class="group h-24 border-r border-b border-white/20 bg-neo-black hover:bg-neo-blue transition-all duration-0 hover:z-10 cursor-hover flex flex-col items-center justify-center p-2">
+                    <div class="text-neo-green group-hover:text-black font-mono text-xs mb-1 opacity-50">>_ TRACKING</div>
+                    <div class="text-white group-hover:text-black font-black font-display text-sm sm:text-lg md:text-xl uppercase">BYTETRACK/SORT</div>
+                </div>
+                <div
+                    class="group h-24 border-r border-b border-white/20 bg-neo-black hover:bg-neo-red transition-all duration-0 hover:z-10 cursor-hover flex flex-col items-center justify-center p-2">
+                    <div class="text-neo-green group-hover:text-white font-mono text-xs mb-1 opacity-50">>_ CS CORE</div>
+                    <div class="text-white group-hover:text-white font-black font-display text-sm sm:text-lg md:text-xl uppercase">400+ DSA / OOP</div>
+                </div>
+            </div>
+            <div class="border-t-4 border-white mt-8 pt-4 flex justify-between font-mono text-xs text-gray-500">
+                <span>TOTAL_MODULES: 16</span>
+                <span>STATUS: ALL_SYSTEMS_OPERATIONAL</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CODING STATS -->
+    <section id="coding-stats" class="py-12 bg-neo-black text-white border-y-4 border-black relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20"
+            style="background-image: linear-gradient(#333 1px, transparent 1px), linear-gradient(90deg, #333 1px, transparent 1px); background-size: 40px 40px;">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="flex justify-between items-center mb-6 border-b-2 border-white pb-3">
+                <h2 class="text-4xl md:text-5xl font-black uppercase text-white tracking-tight">CODING<span
+                        class="text-neo-green">_STATS</span></h2>
+                <div class="flex items-center gap-2">
+                    <div class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                    <p class="font-mono text-neo-green text-xs font-bold">LIVE</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:auto-rows-fr">
+                <!-- GitHub -->
+                <div class="reveal flex flex-col h-full">
+                    <div class="flex items-center gap-2 mb-4 border-b border-white/20 pb-2">
+                        <div class="w-8 h-8 bg-neo-green border-2 border-white flex items-center justify-center"><i
+                                class="ri-github-fill text-lg text-black"></i></div>
+                        <h3 class="text-2xl font-black uppercase text-white">GITHUB</h3>
+                    </div>
+                    <div
+                        class="border-4 border-white/20 p-6 bg-black flex-1 flex flex-col shadow-[8px_8px_0_rgba(0,0,0,1)]">
+                        <div class="flex items-center justify-between mb-8 pb-4 border-b border-white/10">
+                            <div class="flex items-center gap-3">
+                                <i class="ri-github-fill text-3xl text-neo-green"></i>
+                                <div>
+                                    <h4 class="text-xl font-black text-white leading-tight">peddusreekanthreddy7</h4>
+                                    <p class="text-[10px] font-mono text-neo-green uppercase tracking-widest">Always Building</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div id="total-contributions"
+                                    class="text-2xl font-black text-neo-green tracking-tighter">--</div>
+                                <p class="text-[8px] font-mono text-gray-500 uppercase">Repos</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mb-8 uppercase">
+                            <div
+                                class="border-2 border-neo-green/30 bg-neo-black/60 p-4 hover:border-neo-green transition-colors shadow-[4px_4px_0_rgba(51,255,87,0.1)]">
+                                <div
+                                    class="text-[9px] font-mono text-neo-green mb-1 uppercase tracking-widest opacity-70">
+                                    Repositories</div>
+                                <div id="repos-count" class="text-white font-black text-3xl tracking-tighter">--</div>
+                            </div>
+                            <div
+                                class="border-2 border-neo-green/30 bg-neo-black/60 p-4 hover:border-neo-green transition-colors shadow-[4px_4px_0_rgba(51,255,87,0.1)]">
+                                <div
+                                    class="text-[9px] font-mono text-neo-green mb-1 uppercase tracking-widest opacity-70">
+                                    Followers</div>
+                                <div id="followers-count" class="text-white font-black text-3xl tracking-tighter">--</div>
+                            </div>
+                            <div
+                                class="border-2 border-neo-green/30 bg-neo-black/60 p-4 hover:border-neo-green transition-colors shadow-[4px_4px_0_rgba(51,255,87,0.1)]">
+                                <div
+                                    class="text-[9px] font-mono text-neo-green mb-1 uppercase tracking-widest opacity-70">
+                                    Live Startup</div>
+                                <div class="text-white font-black text-3xl tracking-tighter">askd</div>
+                            </div>
+                            <div
+                                class="border-2 border-neo-green/30 bg-neo-black/60 p-4 hover:border-neo-green transition-colors shadow-[4px_4px_0_rgba(51,255,87,0.1)]">
+                                <div
+                                    class="text-[9px] font-mono text-neo-green mb-1 uppercase tracking-widest opacity-70">
+                                    Joined</div>
+                                <div id="created-at"
+                                    class="text-white font-black text-xl tracking-tighter mt-1 leading-none">--</div>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center mb-8">
+                            <div
+                                class="bg-black border-2 border-neo-green/30 p-2 overflow-hidden shadow-[4px_4px_0_rgba(51,255,87,0.1)] hover:border-neo-green transition-colors duration-500 relative">
+                                <div class="absolute top-1 right-1 w-1.5 h-1.5 bg-neo-green rounded-full animate-pulse">
+                                </div>
+                                <p class="text-[8px] font-mono text-neo-green/50 uppercase tracking-[0.2em] mb-1">
+                                    Matrix_Output</p>
+                                <img src="https://ghchart.rshah.org/33FF57/peddusreekanthreddy7"
+                                    alt="GitHub Contribution Graph" class="w-full h-auto filter brightness-110">
+                            </div>
+                        </div>
+                        <div
+                            class="mt-auto flex items-center justify-between text-neo-green p-3 border-2 border-white/10 bg-neo-black font-mono text-[11px]">
+                            <div class="flex items-center gap-2"><span class="text-white/30">$</span><span
+                                    class="text-neo-green">gh --stats</span><span class="animate-pulse">_</span></div>
+                            <a href="https://github.com/peddusreekanthreddy7" target="_blank"
+                                class="text-neo-green px-3 py-1 font-black uppercase border border-neo-green hover:bg-neo-green hover:text-black transition-all cursor-hover">VIEW_GH
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Problem Solving & DSA -->
+                <div class="reveal flex flex-col h-full">
+                    <div class="flex items-center gap-2 mb-4 border-b border-white/20 pb-2">
+                        <div class="w-8 h-8 bg-neo-orange border-2 border-white flex items-center justify-center"><i
+                                class="ri-code-box-fill text-lg text-black"></i></div>
+                        <h3 class="text-2xl font-black uppercase text-white">PROBLEM SOLVING & CS</h3>
+                    </div>
+                    <div
+                        class="border-4 border-white/20 p-6 bg-black flex-1 flex flex-col shadow-[8px_8px_0_rgba(0,0,0,1)]">
+                        <div class="flex items-center justify-between mb-8 pb-4 border-b border-white/10">
+                            <div class="flex items-center gap-3">
+                                <i class="ri-code-box-fill text-3xl text-neo-orange"></i>
+                                <div>
+                                    <h4 class="text-xl font-black text-white leading-tight">DSA & Core CS</h4>
+                                    <p class="text-[10px] font-mono text-neo-orange uppercase tracking-widest">Algorithms & Systems</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-black text-neo-orange tracking-tighter">400+</div>
+                                <p class="text-[8px] font-mono text-gray-500 uppercase">DSA Solved</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4 mb-8 uppercase">
+                            <div
+                                class="border-2 border-neo-orange/30 bg-neo-black/60 p-4 hover:border-neo-orange transition-colors shadow-[4px_4px_0_rgba(255,107,0,0.1)]">
+                                <div
+                                    class="text-[9px] font-mono text-neo-orange mb-1 uppercase tracking-widest opacity-70">
+                                    DSA Solved</div>
+                                <div class="text-white font-black text-3xl tracking-tighter">400+</div>
+                            </div>
+                            <div
+                                class="border-2 border-neo-orange/30 bg-neo-black/60 p-4 hover:border-neo-orange transition-colors shadow-[4px_4px_0_rgba(255,107,0,0.1)]">
+                                <div
+                                    class="text-[9px] font-mono text-neo-orange mb-1 uppercase tracking-widest opacity-70">
+                                    Hackathons</div>
+                                <div class="text-white font-black text-3xl tracking-tighter">15+</div>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center mb-8">
+                            <div
+                                class="border-2 border-neo-orange/30 p-4 bg-neo-black/80 shadow-[4px_4px_0_rgba(255,107,0,0.1)]">
+                                <p class="text-xs font-mono text-neo-orange mb-2 font-bold">>_ CORE COMPETENCIES:</p>
+                                <ul class="text-xs font-mono text-gray-300 space-y-1">
+                                    <li>&bull; Advanced Data Structures, Graphs & DP</li>
+                                    <li>&bull; Object Oriented Programming & System Design</li>
+                                    <li>&bull; Operating Systems, DBMS & Computer Networks</li>
+                                    <li>&bull; Linear Algebra, Probability & Discrete Math</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div
+                            class="mt-auto flex items-center justify-between text-neo-orange p-3 border-2 border-white/10 bg-neo-black font-mono text-[11px]">
+                            <div class="flex items-center gap-2"><span class="text-white/30">$</span><span
+                                    class="text-neo-orange">dsa --verify</span><span class="animate-pulse">_</span>
+                            </div>
+                            <a href="https://github.com/peddusreekanthreddy7" target="_blank"
+                                class="text-neo-orange px-3 py-1 font-black uppercase border border-neo-orange hover:bg-neo-orange hover:text-black transition-all cursor-hover">GITHUB
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-24 bg-neo-yellow border-t-4 border-black px-4 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl sm:text-6xl md:text-9xl font-black mb-16 uppercase tracking-tighter text-white drop-shadow-[4px_4px_0_rgba(0,0,0,1)]"
+                style="-webkit-text-stroke: 3px black;">Selected Works</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- 01: DatalakeFaceAuth 2024 -->
+                <article class="reveal stagger-1 group bg-white border-4 border-black p-4 shadow-hard tilt-card">
+                    <div
+                        class="bg-neo-red border-2 border-black aspect-video relative overflow-hidden mb-6 flex items-center justify-center">
+                        <div class="text-center p-6">
+                            <p class="font-mono text-xs text-white/70 mb-2">01 // MOBILE AI & SECURITY</p>
+                            <h4 class="text-3xl sm:text-4xl font-black text-white">DatalakeFaceAuth</h4>
+                            <span class="mt-3 inline-block font-mono text-xs bg-white text-black px-3 py-1 border border-black font-bold">INT8 Quantization &bull; 6.71 MB</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3
+                                class="text-3xl sm:text-4xl font-black uppercase mb-2 group-hover:text-neo-red transition-colors glitch-hover">
+                                FaceAuth 2024</h3>
+                            <p class="font-mono text-sm mb-4 max-w-sm">Offline mobile face authentication using face detection, alignment, anti-spoofing, and INT8 quantized recognition (173–190ms latency) with AES-256 cloud sync.</p>
+                            <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
+                                <span class="bg-neo-black text-white px-2 py-1">Python</span>
+                                <span class="bg-neo-black text-white px-2 py-1">INT8 Quant</span>
+                                <span class="bg-neo-black text-white px-2 py-1">AWS Lambda</span>
+                                <span class="bg-neo-black text-white px-2 py-1">DynamoDB</span>
+                                <span class="bg-neo-black text-white px-2 py-1">AES-256</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <a href="https://github.com/peddusreekanthreddy7/HACKATHON-7.1" target="_blank"
+                                class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm" title="GitHub Repo"><i
+                                    class="ri-github-fill text-2xl"></i></a>
+                            <a href="https://drive.google.com/file/d/1D1_aZa0OtnO3WXjK7u3aJQSOe8dDz2fO/view?usp=sharing" target="_blank"
+                                class="w-12 h-12 border-2 border-black bg-neo-yellow flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm" title="Download APK"><i
+                                    class="ri-android-fill text-2xl"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 02: CareerOS -->
+                <article
+                    class="reveal stagger-2 group bg-white border-4 border-black p-4 shadow-hard mt-0 md:mt-20 tilt-card">
+                    <div
+                        class="bg-neo-purple border-2 border-black aspect-video relative overflow-hidden mb-6 flex items-center justify-center">
+                        <div class="text-center p-6">
+                            <p class="font-mono text-xs text-white/70 mb-2">02 // MULTI-AGENT ENGINE</p>
+                            <h4 class="text-3xl sm:text-4xl font-black text-white">CareerOS</h4>
+                            <a href="https://youtu.be/9cqEbAvRIYY?si=-A6D0WofPAe8BnLi" target="_blank"
+                                class="mt-3 inline-block font-mono text-xs bg-white text-black px-3 py-1 border border-black cursor-hover font-bold">WATCH
+                                DEMO &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3
+                                class="text-3xl sm:text-4xl font-black uppercase mb-2 group-hover:text-neo-purple transition-colors glitch-hover">
+                                CareerOS</h3>
+                            <p class="font-mono text-sm mb-4 max-w-sm">Autonomous multi-agent system collecting jobs via FastAPI & Playwright, tailoring resumes with Gemini/Llama & CascadeFlow, and auto-fixing LaTeX compiler errors.</p>
+                            <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
+                                <span class="bg-neo-black text-white px-2 py-1">FastAPI</span>
+                                <span class="bg-neo-black text-white px-2 py-1">Playwright</span>
+                                <span class="bg-neo-black text-white px-2 py-1">Gemini</span>
+                                <span class="bg-neo-black text-white px-2 py-1">CascadeFlow</span>
+                                <span class="bg-neo-black text-white px-2 py-1">LaTeX Agent</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/peddusreekanthreddy7/careeross" target="_blank"
+                            class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm" title="GitHub Repo"><i
+                                class="ri-arrow-right-up-line text-2xl"></i></a>
+                    </div>
+                </article>
+
+                <!-- 03: askd -->
+                <article class="reveal stagger-3 group bg-white border-4 border-black p-4 shadow-hard tilt-card">
+                    <div
+                        class="bg-neo-green border-2 border-black aspect-video relative overflow-hidden mb-6 flex items-center justify-center">
+                        <div class="text-center p-6">
+                            <p class="font-mono text-xs text-black/70 mb-2">03 // AI STARTUP MVP</p>
+                            <h4 class="text-3xl sm:text-4xl font-black text-black">askd.in</h4>
+                            <a href="https://www.askd.in/" target="_blank"
+                                class="mt-3 inline-block font-mono text-xs bg-black text-white px-3 py-1 border border-black cursor-hover font-bold">VISIT
+                                LIVE &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3
+                                class="text-3xl sm:text-4xl font-black uppercase mb-2 group-hover:text-neo-green transition-colors glitch-hover">
+                                askd</h3>
+                            <p class="font-mono text-sm mb-4 max-w-sm">AI pipeline evaluating handwritten exam answers using OCR, rubric-based checking, question paper context awareness, and automated scoring for 20 paying institutions.</p>
+                            <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
+                                <span class="bg-neo-black text-white px-2 py-1">Vision AI</span>
+                                <span class="bg-neo-black text-white px-2 py-1">OCR Engine</span>
+                                <span class="bg-neo-black text-white px-2 py-1">Rubric AI</span>
+                                <span class="bg-neo-black text-white px-2 py-1">FastAPI</span>
+                                <span class="bg-neo-black text-white px-2 py-1">React</span>
+                            </div>
+                        </div>
+                        <a href="https://www.askd.in/" target="_blank"
+                            class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm" title="Live Platform"><i
+                                class="ri-external-link-line text-2xl"></i></a>
+                    </div>
+                </article>
+
+                <!-- 04: FinAccess 2024 -->
+                <article
+                    class="reveal stagger-4 group bg-white border-4 border-black p-4 shadow-hard mt-0 md:mt-20 tilt-card">
+                    <div
+                        class="bg-neo-orange border-2 border-black aspect-video relative overflow-hidden mb-6 flex items-center justify-center">
+                        <div class="text-center p-6">
+                            <p class="font-mono text-xs text-black/70 mb-2">04 // HACKATHON WINNER</p>
+                            <h4 class="text-3xl sm:text-4xl font-black text-black">FINACCESS</h4>
+                            <span class="mt-3 inline-block font-mono text-xs bg-black text-neo-orange px-3 py-1 border border-black font-bold">&#127942; 94.31% ACCURACY &bull; 0.957 AUC</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3
+                                class="text-3xl sm:text-4xl font-black uppercase mb-2 group-hover:text-neo-orange transition-colors glitch-hover">
+                                FinAccess</h3>
+                            <p class="font-mono text-sm mb-4 max-w-sm">FastAPI-based credit risk engine combining XGBoost and Graph Convolutional Networks (GCN) with SHAP explainability and 0% failure rate under 100 concurrent users.</p>
+                            <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
+                                <span class="bg-neo-black text-white px-2 py-1">XGBoost</span>
+                                <span class="bg-neo-black text-white px-2 py-1">GCN</span>
+                                <span class="bg-neo-black text-white px-2 py-1">SHAP</span>
+                                <span class="bg-neo-black text-white px-2 py-1">FastAPI</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/peddusreekanthreddy7/fin_access" target="_blank"
+                            class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm" title="GitHub Repo"><i
+                                class="ri-arrow-right-up-line text-2xl"></i></a>
+                    </div>
+                </article>
+
+                <!-- 05: Intelligent Traffic Analysis -->
+                <article class="reveal stagger-5 group bg-white border-4 border-black p-4 shadow-hard tilt-card">
+                    <div
+                        class="bg-neo-blue border-2 border-black aspect-video relative overflow-hidden mb-6 flex items-center justify-center">
+                        <div class="text-center p-6">
+                            <p class="font-mono text-xs text-white/70 mb-2">05 // COMPUTER VISION</p>
+                            <h4 class="text-3xl sm:text-4xl font-black text-white">TRAFFIC ANALYSIS</h4>
+                            <a href="https://youtu.be/JzggnaPxmZU?si=NOQ2H9EeKv0WUNBY" target="_blank"
+                                class="mt-3 inline-block font-mono text-xs bg-white text-black px-3 py-1 border border-black cursor-hover font-bold">WATCH
+                                DEMO &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3
+                                class="text-3xl sm:text-4xl font-black uppercase mb-2 group-hover:text-neo-blue transition-colors glitch-hover">
+                                Traffic Analysis</h3>
+                            <p class="font-mono text-sm mb-4 max-w-sm">Computer vision system using YOLOv8/YOLOv11 and OpenCV with ByteTrack/SORT tracking for vehicle classification, queue congestion, red-light and rash-driving detection.</p>
+                            <div class="flex gap-2 font-mono text-xs font-bold flex-wrap">
+                                <span class="bg-neo-black text-white px-2 py-1">YOLOv11</span>
+                                <span class="bg-neo-black text-white px-2 py-1">OpenCV</span>
+                                <span class="bg-neo-black text-white px-2 py-1">ByteTrack</span>
+                                <span class="bg-neo-black text-white px-2 py-1">Streamlit</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/peddusreekanthreddy7/traffic-analysis-" target="_blank"
+                            class="w-12 h-12 border-2 border-black bg-neo-green flex items-center justify-center hover:bg-black hover:text-white transition-all cursor-hover shadow-hard-sm" title="GitHub Repo"><i
+                                class="ri-arrow-right-up-line text-2xl"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center mt-24">
+                <a href="https://github.com/peddusreekanthreddy7?tab=repositories" target="_blank"
+                    class="inline-block bg-neo-black text-white px-6 py-4 sm:px-12 sm:py-5 font-bold font-mono text-sm sm:text-xl hover:bg-neo-white hover:text-black border-4 border-black transition-all shadow-hard hover:shadow-none cursor-hover max-w-full text-center">VIEW
+                    ALL REPOS ON GITHUB</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ASKD SPOTLIGHT -->
+    <section id="askd" class="py-24 px-4 max-w-7xl mx-auto reveal">
+        <div class="bg-white border-4 border-black shadow-hard-xl p-8 md:p-12 relative">
+            <div class="absolute -top-10 -left-2 sm:-left-6 bg-neo-green border-4 border-black px-6 py-2 shadow-hard rotate-[-5deg]">
+                <span class="font-black text-xl sm:text-2xl">FOUNDER &amp; LEAD AI ARCHITECT</span>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 mt-4">
+                <div>
+                    <h2 class="text-5xl sm:text-6xl font-black uppercase mb-2">ASKD.IN</h2>
+                    <p class="font-mono text-xl text-neo-red font-bold">AI-Powered Exam Answer Script Evaluation Platform</p>
+                </div>
+                <a href="https://www.askd.in/" target="_blank" class="mt-4 md:mt-0 bg-neo-yellow border-2 border-black px-6 py-3 font-mono font-bold shadow-hard hover:bg-neo-pink transition-all">VISIT ASKD.IN &rarr;</a>
+            </div>
+            <ul class="list-disc list-inside font-mono text-gray-800 space-y-3 text-base sm:text-lg">
+                <li>End-to-end OCR and rubric-based automatic checking and structured feedback generation for handwritten student exams.</li>
+                <li>Question-paper aware context engine parsing mathematical equations, structured tables, and architectural diagrams.</li>
+                <li>Scaled to <strong>20 paying institutional customers</strong> and secured institutional funding for the startup MVP.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="py-20 bg-neo-white border-t-4 border-black px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b-4 border-black pb-4">
+                <h2 class="text-4xl sm:text-6xl md:text-8xl font-black uppercase tracking-tighter">
+                    KEY<span class="text-neo-pink">_HONORS</span>
+                </h2>
+                <p class="font-mono text-sm font-bold text-gray-500">/// COMPETITIVE & STARTUP ACCOLADES</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white border-4 border-black p-6 shadow-hard tilt-card">
+                    <div class="bg-neo-yellow inline-block px-3 py-1 font-mono font-bold text-xs border border-black mb-3">1ST PLACE</div>
+                    <h3 class="text-2xl font-black uppercase mb-2">Smart India Hackathon</h3>
+                    <p class="font-mono text-sm text-gray-600">Internal First Place Winner, Team Leader representing institutional cohort.</p>
+                </div>
+
+                <div class="bg-white border-4 border-black p-6 shadow-hard tilt-card">
+                    <div class="bg-neo-green inline-block px-3 py-1 font-mono font-bold text-xs border border-black mb-3">3RD PLACE</div>
+                    <h3 class="text-2xl font-black uppercase mb-2">RizeOS Hackathon</h3>
+                    <p class="font-mono text-sm text-gray-600">Cleared all 3 rigorous rounds with an aggregate score of 71.1 points as Team Leader.</p>
+                </div>
+
+                <div class="bg-white border-4 border-black p-6 shadow-hard tilt-card">
+                    <div class="bg-neo-pink inline-block px-3 py-1 font-mono font-bold text-xs border border-black mb-3">3RD PLACE</div>
+                    <h3 class="text-2xl font-black uppercase mb-2">Netrik Hackathon</h3>
+                    <p class="font-mono text-sm text-gray-600">Podium finish among 15+ hackathons participated in across nationwide tech fests.</p>
+                </div>
+
+                <div class="bg-white border-4 border-black p-6 shadow-hard tilt-card">
+                    <div class="bg-neo-purple text-white inline-block px-3 py-1 font-mono font-bold text-xs border border-black mb-3">FUNDED</div>
+                    <h3 class="text-2xl font-black uppercase mb-2">askd Startup MVP</h3>
+                    <p class="font-mono text-sm text-gray-600">Secured institutional venture funding for the AI exam evaluation MVP.</p>
+                </div>
+
+                <div class="bg-white border-4 border-black p-6 shadow-hard tilt-card">
+                    <div class="bg-neo-red text-white inline-block px-3 py-1 font-mono font-bold text-xs border border-black mb-3">TOPPER</div>
+                    <h3 class="text-2xl font-black uppercase mb-2">National INTSO Olympiad</h3>
+                    <p class="font-mono text-sm text-gray-600">State/National Topper, awarded laptop prize and featured across news press.</p>
+                </div>
+
+                <div class="bg-white border-4 border-black p-6 shadow-hard tilt-card">
+                    <div class="bg-neo-blue text-white inline-block px-3 py-1 font-mono font-bold text-xs border border-black mb-3">1ST PLACE</div>
+                    <h3 class="text-2xl font-black uppercase mb-2">Startup Idea Pitching</h3>
+                    <p class="font-mono text-sm text-gray-600">Recognized in press associated with Dr. BVR Mohan Reddy, Chairman of Cyient.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-12 sm:py-24 px-4 max-w-5xl mx-4 md:mx-auto">
+        <div class="bg-white border-4 border-black shadow-hard-xl p-8 md:p-12 relative reveal mt-12">
+            <div
+                class="absolute -top-10 left-2 md:-left-6 bg-neo-yellow border-4 border-black px-4 md:px-6 py-2 shadow-hard rotate-[-5deg]">
+                <span class="font-black text-xl md:text-2xl">LET'S CONNECT</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-4xl sm:text-6xl font-black uppercase mb-6 leading-[0.85]">
+                        Let's<br>Build<br>Together.</h2>
+                    <p class="font-mono text-base sm:text-lg mb-8 text-gray-600">Open to AI/ML internships, multi-agent systems engineering, and tech collaborations.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-neo-black text-white flex items-center justify-center border-2 border-black">
+                                <i class="ri-mail-line text-xl"></i></div>
+                            <a href="mailto:peddusreekanthreddy@gmail.com"
+                                class="text-base sm:text-lg md:text-xl font-bold hover:bg-neo-blue cursor-hover break-all">peddusreekanthreddy@gmail.com</a>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-neo-black text-white flex items-center justify-center border-2 border-black">
+                                <i class="ri-map-pin-line text-xl"></i></div>
+                            <span class="text-xl font-bold">Andhra Pradesh, India</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-12 h-12 bg-neo-black text-white flex items-center justify-center border-2 border-black">
+                                <i class="ri-phone-line text-xl"></i></div>
+                            <span class="text-xl font-bold">+91-7386783406</span>
+                        </div>
+                    </div>
+                </div>
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST"
+                    class="space-y-6 bg-gray-50 p-6 border-2 border-black">
+                    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+                    <input type="text" name="honeypot" style="display:none">
+                    <div class="flex flex-col"><label
+                            class="font-mono font-bold mb-1 uppercase text-xs">Identity</label><input type="text"
+                            id="cf-name" name="name" required placeholder="NAME / COMPANY"
+                            class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all cursor-hover">
+                    </div>
+                    <div class="flex flex-col"><label
+                            class="font-mono font-bold mb-1 uppercase text-xs">Coordinates</label><input type="email"
+                            id="cf-email" name="email" required placeholder="EMAIL ADDRESS"
+                            class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all cursor-hover">
+                    </div>
+                    <div class="flex flex-col"><label
+                            class="font-mono font-bold mb-1 uppercase text-xs">Transmission</label><textarea rows="4"
+                            id="cf-message" name="message" required placeholder="PROJECT DETAILS..."
+                            class="bg-white border-2 border-black p-3 font-bold focus:outline-none focus:bg-neo-yellow focus:shadow-hard-sm transition-all resize-none cursor-hover"></textarea>
+                    </div>
+                    <button type="submit" id="transmit-btn"
+                        class="w-full bg-neo-red text-white font-black text-xl py-4 border-2 border-black shadow-hard hover:bg-neo-black hover:translate-y-1 hover:shadow-none transition-all cursor-hover flex items-center justify-center gap-3">
+                        <i class="ri-send-plane-fill"></i> TRANSMIT DATA
+                    </button>
+                    <p class="font-mono text-xs text-gray-400 text-center">📬 Messages reach peddusreekanthreddy@gmail.com</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-white py-16 px-4 border-t-8 border-neo-red font-mono relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 relative z-10">
+            <div class="col-span-1 md:col-span-2">
+                <h2 class="text-4xl font-black mb-6">SREEKANTH.</h2>
+                <p class="text-gray-400 max-w-sm">IIITDM Kurnool &bull; AI/ML Engineer & Systems Builder. No fluff, just code and production impact.</p>
+            </div>
+            <div>
+                <h3 class="font-bold text-neo-red mb-4 border-b border-gray-700 pb-2">SITEMAP</h3>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#"
+                            class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">Home</a>
+                    </li>
+                    <li><a href="#projects"
+                            class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">Works</a>
+                    </li>
+                    <li><a href="#about"
+                            class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">About</a>
+                    </li>
+                    <li><a href="#education"
+                            class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">Education</a>
+                    </li>
+                    <li><a href="#achievements"
+                            class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">Achievements</a>
+                    </li>
+                    <li><a href="#contact"
+                            class="hover:text-white hover:underline decoration-neo-pink decoration-2 cursor-hover">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-neo-red mb-4 border-b border-gray-700 pb-2">SOCIALS</h3>
+                <div class="flex gap-4">
+                    <a href="https://github.com/peddusreekanthreddy7" target="_blank"
+                        class="text-2xl hover:text-neo-yellow transition-colors cursor-hover" title="GitHub"><i
+                            class="ri-github-fill"></i></a>
+                    <a href="https://www.linkedin.com/in/sreekanth-reddy-peddu-725584342/" target="_blank"
+                        class="text-2xl hover:text-neo-blue transition-colors cursor-hover" title="LinkedIn"><i
+                            class="ri-linkedin-fill"></i></a>
+                    <a href="https://www.askd.in/" target="_blank"
+                        class="text-2xl hover:text-neo-green transition-colors cursor-hover" title="askd"><i
+                            class="ri-rocket-fill"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-16 pt-8 border-t border-gray-800 text-gray-500 text-sm">
+            <p>&copy; 2026 PEDDUSREEKANTH.dev // SYSTEM_END</p>
+        </div>
+        <div
+            class="absolute bottom-0 left-0 w-full text-[20vw] font-black text-white opacity-[0.03] leading-none select-none pointer-events-none text-center">
+            BUILD</div>
+    </footer>
+
+    <script>
+        // Loader
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loaderOverlay').classList.add('hidden');
+            }, 2000);
+        });
+
+        // Custom Cursor
+        const cursor = document.getElementById('cursor');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            cursor.style.transform = 'translate(-50%, -50%)';
+        });
+
+        function resetCursor() {
+            cursor.style.width = '24px';
+            cursor.style.height = '24px';
+            cursor.style.backgroundColor = '#fff';
+            cursor.style.mixBlendMode = 'difference';
+            cursor.style.border = 'none';
+            cursor.style.borderRadius = '50%';
+            cursor.innerHTML = '';
+        }
+
+        // Track custom mouse hover types
+        document.querySelectorAll('a, button, input, textarea, .cursor-hover').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                if (el.id === 'rain-btn') return;
+
+                cursor.style.width = '60px';
+                cursor.style.height = '60px';
+                cursor.style.backgroundColor = '#FBFF48';
+                cursor.style.mixBlendMode = 'normal';
+                cursor.style.border = '2px solid black';
+                cursor.style.borderRadius = '50%';
+                cursor.innerHTML = '';
+            });
+            el.addEventListener('mouseleave', () => {
+                if (el.id === 'rain-btn') return;
+                resetCursor();
+            });
+        });
+
+        // Hovering over the Rain Hydrant button
+        const rainBtn = document.getElementById('rain-btn');
+        if (rainBtn) {
+            rainBtn.addEventListener('mouseenter', () => {
+                cursor.style.width = '50px';
+                cursor.style.height = '50px';
+                cursor.style.backgroundColor = 'transparent';
+                cursor.style.mixBlendMode = 'normal';
+                cursor.style.border = 'none';
+                cursor.style.display = 'flex';
+                cursor.style.alignItems = 'center';
+                cursor.style.justifyContent = 'center';
+                cursor.innerHTML = '<span style="font-size: 32px; transform: scale(1.2); filter: drop-shadow(2px 2px 0 black);">🌧️</span>';
+            });
+            rainBtn.addEventListener('mouseleave', () => {
+                resetCursor();
+            });
+        }
+
+        // GitHub API for peddusreekanthreddy7
+        async function fetchGitHubStats() {
+            try {
+                const r = await fetch('https://api.github.com/users/peddusreekanthreddy7', { headers: { 'Accept': 'application/vnd.github.v3+json' } });
+                if (!r.ok) throw new Error('HTTP ' + r.status);
+                const d = await r.json();
+                document.getElementById('repos-count').textContent = d.public_repos || '0';
+                document.getElementById('total-contributions').textContent = d.public_repos || '0';
+                document.getElementById('followers-count').textContent = d.followers || '0';
+                if (d.created_at) {
+                    const dt = new Date(d.created_at);
+                    document.getElementById('created-at').textContent = dt.toLocaleDateString('en-US', { year: 'numeric', month: 'short' });
+                }
+            } catch (e) {
+                console.error('GitHub API error:', e);
+                document.getElementById('repos-count').textContent = '10+';
+                document.getElementById('total-contributions').textContent = '10+';
+                document.getElementById('followers-count').textContent = '5+';
+                document.getElementById('created-at').textContent = 'Active';
+            }
+        }
+        fetchGitHubStats();
+
+        // Scroll Reveal
+        const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('active'); });
+        }, { threshold: 0.1 });
+        revealEls.forEach(el => obs.observe(el));
+
+        // Progress Bar
+        window.onscroll = function () {
+            let s = document.body.scrollTop || document.documentElement.scrollTop;
+            let h = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            document.getElementById("progressBar").style.width = (s / h * 100) + "%";
+        };
+
+        // Parallax floating shapes
+        window.addEventListener('mousemove', (e) => {
+            const shapes = document.querySelectorAll('.float-anim, .float-anim-2');
+            const x = (e.clientX / window.innerWidth - 0.5) * 20;
+            const y = (e.clientY / window.innerHeight - 0.5) * 20;
+            shapes.forEach((s, i) => {
+                const factor = (i + 1) * 0.5;
+                s.style.transform += ` translate(${x * factor}px, ${y * factor}px)`;
+            });
+        });
+
+        // 1. Particle Burst on Score Badge Click
+        function popScore(el) {
+            el.style.transform = 'scale(1.4)';
+            setTimeout(() => { el.style.transform = ''; }, 300);
+
+            const rect = el.getBoundingClientRect();
+            const cx = rect.left + rect.width / 2;
+            const cy = rect.top + rect.height / 2;
+            const container = document.getElementById('edu-particles');
+            const colors = ['#FF2A2A', '#FBFF48', '#33FF57', '#FF70A6', '#3B82F6', '#A855F7', '#FF9F1C'];
+
+            for (let i = 0; i < 18; i++) {
+                const p = document.createElement('div');
+                const size = Math.random() * 10 + 4;
+                const angle = (Math.PI * 2 * i) / 18 + (Math.random() - 0.5) * 0.5;
+                const dist = Math.random() * 80 + 40;
+                const dx = Math.cos(angle) * dist;
+                const dy = Math.sin(angle) * dist;
+                const shapes = ['50%', '0', '2px'];
+                p.style.cssText = `
+                    position:fixed; left:${cx}px; top:${cy}px;
+                    width:${size}px; height:${size}px;
+                    background:${colors[Math.floor(Math.random() * colors.length)]};
+                    border-radius:${shapes[Math.floor(Math.random() * 3)]};
+                    border:1.5px solid #000;
+                    pointer-events:none; z-index:9999;
+                    transition: all 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+                `;
+                container.appendChild(p);
+                requestAnimationFrame(() => {
+                    p.style.transform = `translate(${dx}px, ${dy}px) rotate(${Math.random() * 360}deg)`;
+                    p.style.opacity = '0';
+                });
+                setTimeout(() => p.remove(), 800);
+            }
+        }
+
+        // 2. Draggable Stickers
+        document.querySelectorAll('.edu-sticker').forEach(sticker => {
+            let isDrag = false, startX, startY, origX, origY;
+
+            sticker.addEventListener('mousedown', (e) => {
+                isDrag = true;
+                sticker.style.cursor = 'grabbing';
+                sticker.style.zIndex = '50';
+                startX = e.clientX;
+                startY = e.clientY;
+                const rect = sticker.getBoundingClientRect();
+                const parent = sticker.parentElement.getBoundingClientRect();
+                origX = rect.left - parent.left;
+                origY = rect.top - parent.top;
+                e.preventDefault();
+            });
+
+            document.addEventListener('mousemove', (e) => {
+                if (!isDrag) return;
+                const dx = e.clientX - startX;
+                const dy = e.clientY - startY;
+                sticker.style.left = (origX + dx) + 'px';
+                sticker.style.top = (origY + dy) + 'px';
+                sticker.style.right = 'auto';
+                sticker.style.bottom = 'auto';
+            });
+
+            document.addEventListener('mouseup', () => {
+                if (isDrag) {
+                    isDrag = false;
+                    sticker.style.cursor = 'grab';
+                    sticker.style.zIndex = '30';
+                }
+            });
+
+            // Touch support
+            sticker.addEventListener('touchstart', (e) => {
+                isDrag = true;
+                const t = e.touches[0];
+                startX = t.clientX; startY = t.clientY;
+                const rect = sticker.getBoundingClientRect();
+                const parent = sticker.parentElement.getBoundingClientRect();
+                origX = rect.left - parent.left;
+                origY = rect.top - parent.top;
+            }, { passive: true });
+
+            sticker.addEventListener('touchmove', (e) => {
+                if (!isDrag) return;
+                const t = e.touches[0];
+                sticker.style.left = (origX + t.clientX - startX) + 'px';
+                sticker.style.top = (origY + t.clientY - startY) + 'px';
+                sticker.style.right = 'auto';
+                sticker.style.bottom = 'auto';
+            }, { passive: true });
+
+            sticker.addEventListener('touchend', () => { isDrag = false; });
+        });
+
+        // 3. Animated Score Bars
+        const scoreBars = document.querySelectorAll('.score-bar');
+        const barObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.width = entry.target.dataset.target + '%';
+                    barObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+        scoreBars.forEach(bar => barObserver.observe(bar));
+
+        // Contact Form Handling with Web3Forms & Mailto fallback
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', async function (e) {
+                e.preventDefault();
+                const btn = document.getElementById('transmit-btn');
+                const origHTML = btn.innerHTML;
+                btn.innerHTML = '<i class="ri-loader-4-line animate-spin"></i> TRANSMITTING...';
+                btn.disabled = true;
+                btn.style.opacity = '0.7';
+
+                const name = document.getElementById('cf-name').value;
+                const email = document.getElementById('cf-email').value;
+                const message = document.getElementById('cf-message').value;
+
+                try {
+                    const formData = new FormData(this);
+                    formData.append('subject', '🚀 New Portfolio Contact from ' + name);
+                    formData.append('from_name', 'Portfolio Site');
+
+                    const resp = await fetch(this.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: { 'Accept': 'application/json' }
+                    });
+                    const data = await resp.json();
+                    if (data.success) {
+                        this.innerHTML = '<div class="py-16 text-center"><i class="ri-checkbox-circle-fill text-6xl text-neo-green mb-4 block animate-bounce"></i><h3 class="text-2xl font-black uppercase">Transmission Received</h3><p class="font-mono text-sm mt-2 text-gray-600">Thanks for connecting! I will get back to you shortly.</p></div>';
+                    } else {
+                        throw new Error(data.message || 'Submission key not set');
+                    }
+                } catch (err) {
+                    btn.innerHTML = origHTML;
+                    btn.disabled = false;
+                    btn.style.opacity = '1';
+                    // Fallback to mailto
+                    const mailtoUrl = `mailto:peddusreekanthreddy@gmail.com?subject=${encodeURIComponent('Portfolio Contact from ' + name)}&body=${encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message)}`;
+                    window.location.href = mailtoUrl;
+                }
+            });
+        }
+
+        // ============ INTERACTIVE TERMINAL RESUME LOGIC ============
+        const terminalInput = document.getElementById('terminal-input');
+        const terminalHistory = document.getElementById('terminal-history');
+        const terminalBody = document.getElementById('terminal-body');
+
+        const terminalCommands = {
+            help: 'List all available commands.',
+            about: 'Learn more about Peddusreekanth Reddy.',
+            skills: 'Show technical skills and tools.',
+            education: 'Check academic background and scores.',
+            projects: 'List featured AI & CV projects.',
+            achievements: 'List hackathons, awards, and startup milestones.',
+            askd: 'Learn about the askd.in AI startup.',
+            rain: 'Trigger the playhtml rain sprinkler effect.',
+            clear: 'Clear the terminal output history.'
+        };
+
+        const commandHistory = [];
+        let historyIndex = -1;
+
+        if (terminalBody) {
+            terminalBody.addEventListener('click', () => {
+                terminalInput.focus();
+            });
+        }
+
+        function setTerminalTheme(themeName) {
+            if (!terminalBody) return;
+            terminalBody.className = terminalBody.className
+                .split(' ')
+                .filter(c => !c.startsWith('terminal-theme-'))
+                .join(' ');
+
+            terminalBody.classList.add('terminal-theme-' + themeName);
+            printHistory(null, `<span class="text-gray-400">System: Terminal theme set to '${themeName}'.</span>`);
+        }
+
+        function printHistory(promptCmd, outputHtml) {
+            const entry = document.createElement('div');
+            entry.className = 'space-y-1';
+
+            if (promptCmd !== null) {
+                entry.innerHTML += `<div><span class="terminal-prompt text-neo-green font-bold"><span class="hidden sm:inline">sreekanth@portfolio:</span>~$</span> <span class="text-white">${promptCmd}</span></div>`;
+            }
+
+            if (outputHtml) {
+                entry.innerHTML += `<div class="pl-4 leading-relaxed">${outputHtml}</div>`;
+            }
+
+            terminalHistory.appendChild(entry);
+            terminalBody.scrollTop = terminalBody.scrollHeight;
+        }
+
+        if (terminalInput) {
+            terminalInput.addEventListener('keydown', function (e) {
+                if (e.key === 'Tab') {
+                    e.preventDefault();
+                    const currentVal = this.value.trim().toLowerCase();
+                    if (!currentVal) return;
+
+                    const matches = Object.keys(terminalCommands).filter(cmd => cmd.startsWith(currentVal));
+                    if (matches.length === 1) {
+                        this.value = matches[0];
+                    } else if (matches.length > 1) {
+                        printHistory(this.value, `<span class="text-gray-400">Suggestions: ${matches.join(', ')}</span>`);
+                    }
+                } else if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    if (commandHistory.length > 0) {
+                        if (historyIndex === -1) historyIndex = commandHistory.length;
+                        if (historyIndex > 0) {
+                            historyIndex--;
+                            this.value = commandHistory[historyIndex];
+                        }
+                    }
+                } else if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    if (commandHistory.length > 0 && historyIndex !== -1) {
+                        if (historyIndex < commandHistory.length - 1) {
+                            historyIndex++;
+                            this.value = commandHistory[historyIndex];
+                        } else {
+                            historyIndex = -1;
+                            this.value = '';
+                        }
+                    }
+                }
+            });
+
+            terminalInput.addEventListener('keypress', function (e) {
+                if (e.key === 'Enter') {
+                    const fullCmd = this.value.trim();
+                    const parts = fullCmd.split(' ');
+                    const cmd = parts[0].toLowerCase();
+                    const args = parts.slice(1);
+
+                    if (fullCmd) {
+                        commandHistory.push(fullCmd);
+                    }
+                    historyIndex = -1;
+                    this.value = '';
+
+                    if (!cmd) {
+                        printHistory('', '');
+                        return;
+                    }
+
+                    switch (cmd) {
+                        case 'help':
+                            let helpHtml = '<div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-1">';
+                            for (const [name, desc] of Object.entries(terminalCommands)) {
+                                helpHtml += `<div><span class="terminal-cmd text-neo-yellow font-bold">${name}</span> - ${desc}</div>`;
+                            }
+                            helpHtml += '<div><span class="terminal-cmd text-neo-yellow font-bold font-mono">theme &lt;name&gt;</span> - Change style: default, dracula, solarized, nord.</div>';
+                            helpHtml += '</div>';
+                            printHistory(fullCmd, helpHtml);
+                            break;
+
+                        case 'clear':
+                            terminalHistory.innerHTML = '';
+                            break;
+
+                        case 'about':
+                            printHistory(fullCmd, `
+                                <div class="text-white space-y-1">
+                                    <div class="text-neo-pink font-bold text-lg">Peddusreekanth Reddy</div>
+                                    <div>------------------------------</div>
+                                    <div>🚀 B.Tech @ IIITDM Kurnool (2024-2028).</div>
+                                    <div>🤖 Founder &amp; Lead AI Engineer @ askd (AI Exam Answer Script Evaluation Platform).</div>
+                                    <div>💼 Building high-performance ML pipelines, multi-agents &amp; CV systems.</div>
+                                    <div>🏆 Smart India Hackathon internal winner &amp; 15+ hackathons veteran.</div>
+                                </div>
+                            `);
+                            break;
+
+                        case 'skills':
+                            printHistory(fullCmd, `
+                                <div class="space-y-1">
+                                    <div><span class="text-neo-pink font-bold">Languages:</span>      Python, Java, C, C++, JavaScript, SQL</div>
+                                    <div><span class="text-neo-pink font-bold">AI / ML / CV:</span>    XGBoost, GCN, SHAP, YOLOv8/v11, OpenCV, PyTorch, LangChain, RAG</div>
+                                    <div><span class="text-neo-pink font-bold">Web & Cloud:</span>     FastAPI, React, Node.js, AWS Lambda, DynamoDB, PostgreSQL, Docker</div>
+                                    <div><span class="text-neo-pink font-bold">CS Core:</span>        400+ DSA Problems, OOP, OS, DBMS, Networks, System Design</div>
+                                </div>
+                            `);
+                            break;
+
+                        case 'education':
+                            printHistory(fullCmd, `
+                                <div class="space-y-2 text-white">
+                                    <div>🎓 <span class="font-bold text-neo-yellow">IIITDM Kurnool</span>: B.Tech (2024–2028)</div>
+                                    <div>🏫 <span class="font-bold text-neo-yellow">Class 12 (MPC)</span>: 90.1% Score</div>
+                                    <div>🔥 <span class="font-bold text-neo-yellow">Class 10 Board</span>: 600 / 600 (100% Perfect Score)</div>
+                                    <div>🏆 <span class="font-bold text-neo-yellow">National INTSO Olympiad</span>: State/National Topper</div>
+                                </div>
+                            `);
+                            break;
+
+                        case 'projects':
+                            printHistory(fullCmd, `
+                                <div class="space-y-2 text-white">
+                                    <div>📁 <span class="font-bold text-neo-pink">1. DatalakeFaceAuth:</span> Offline INT8 mobile AI face auth (6.71 MB, 173ms).</div>
+                                    <div>📁 <span class="font-bold text-neo-pink">2. CareerOS:</span> Autonomous multi-agent career engine with auto-fixing LaTeX compiler.</div>
+                                    <div>📁 <span class="font-bold text-neo-pink">3. askd.in:</span> AI-powered exam script evaluation with OCR & rubric checking.</div>
+                                    <div>📁 <span class="font-bold text-neo-pink">4. FinAccess:</span> XGBoost + GCN credit risk engine with SHAP explainability (94.31% acc).</div>
+                                    <div>📁 <span class="font-bold text-neo-pink">5. Traffic Analysis:</span> YOLO + OpenCV vehicle tracking & violation detection.</div>
+                                </div>
+                            `);
+                            break;
+
+                        case 'askd':
+                            printHistory(fullCmd, `
+                                <div class="space-y-1 text-white">
+                                    <div class="text-neo-green font-bold text-base">askd — AI Exam Answer Script Evaluation Platform</div>
+                                    <div>🌐 Live at: <a href="https://www.askd.in/" target="_blank" class="text-neo-yellow underline">https://www.askd.in/</a></div>
+                                    <div>📊 20 paying institutional customers across colleges & schools.</div>
+                                    <div>💡 Context-aware handwriting OCR, rubric auto-scoring, equation & diagram understanding.</div>
+                                </div>
+                            `);
+                            break;
+
+                        case 'achievements':
+                            printHistory(fullCmd, `
+                                <div class="space-y-1 text-white">
+                                    <div>🏆 <span class="text-neo-yellow">Smart India Hackathon:</span> Internal 1st Place, Team Leader.</div>
+                                    <div>🥉 <span class="text-neo-yellow">RizeOS Hackathon:</span> 3rd Place (71.1 pts across 3 rounds).</div>
+                                    <div>🥉 <span class="text-neo-yellow">Netrik Hackathon:</span> 3rd Place Podium.</div>
+                                    <div>💻 <span class="text-neo-yellow">National INTSO Olympiad:</span> Topper, Awarded Laptop.</div>
+                                    <div>🚀 <span class="text-neo-yellow">Startup Idea Pitching:</span> 1st Place (Dr. BVR Mohan Reddy / Cyient recognition).</div>
+                                </div>
+                            `);
+                            break;
+
+                        case 'rain':
+                            printHistory(fullCmd, '<span class="text-neo-blue">🌧️ Initiating rain-sprinkler clouds... Enjoy the weather!</span>');
+                            triggerRain();
+                            break;
+
+                        case 'theme':
+                            if (args.length > 0 && ['default', 'dracula', 'solarized', 'nord'].includes(args[0])) {
+                                setTerminalTheme(args[0]);
+                            } else {
+                                printHistory(fullCmd, '<span class="text-neo-red">Error: Theme name required. Try "theme dracula", "theme solarized", "theme nord", or "theme default".</span>');
+                            }
+                            break;
+
+                        default:
+                            printHistory(fullCmd, `<span class="text-neo-red">Command not found: '${cmd}'. Type 'help' for support.</span>`);
+                    }
+                }
+            });
+        }
+
+        // ============ RAIN SPRINKLER ============
+        let isRaining = false;
+        function triggerRain() {
+            if (isRaining) return;
+            isRaining = true;
+            const btn = document.getElementById('rain-btn');
+            btn.style.transform = 'scale(1.3) rotate(20deg)';
+            setTimeout(() => { btn.style.transform = ''; }, 400);
+
+            document.querySelectorAll('.rain-effect-cloud').forEach(c => c.remove());
+            const existingRainBg = document.querySelector('.rain-background');
+            if (existingRainBg) existingRainBg.remove();
+
+            const rainBackground = document.createElement('div');
+            rainBackground.className = 'rain-background';
+            rainBackground.style.cssText = `
+                position: fixed; top: 80px; left: 0; width: 100vw; height: calc(100vh - 80px);
+                background-image: url('https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUycHM3c2xicTI5eHN5Z2t3bm1jdDR0aHBpbjJyMmhpZ24wd3JmdnNnZiZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/Wmp1EOzVybWd13s5DB/giphy.gif');
+                background-size: 200px 200px; background-repeat: repeat;
+                z-index: 9998; pointer-events: none; opacity: 0;
+                transition: opacity 0.5s ease-in-out;
+            `;
+            document.body.appendChild(rainBackground);
+
+            const numClouds = 5;
+            setTimeout(() => { rainBackground.style.opacity = '0.7'; }, numClouds * 150 + 500);
+
+            const viewportWidth = window.innerWidth;
+            const cloudWidth = 150;
+            const spacing = (viewportWidth - cloudWidth * numClouds) / (numClouds + 1);
+
+            const cloudSVG = `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 80"><defs><filter id="s" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.15"/></filter></defs><ellipse cx="75" cy="50" rx="65" ry="28" fill="#d1d5db" filter="url(#s)"/><ellipse cx="50" cy="40" rx="40" ry="25" fill="#e5e7eb"/><ellipse cx="100" cy="42" rx="38" ry="22" fill="#e5e7eb"/><ellipse cx="75" cy="35" rx="45" ry="22" fill="#f3f4f6"/></svg>')}`;
+
+            for (let i = 0; i < numClouds; i++) {
+                const cloud = document.createElement('div');
+                cloud.className = 'rain-effect-cloud';
+
+                const targetX = spacing + i * (cloudWidth + spacing);
+                const startX = i % 2 === 0 ? -200 : viewportWidth + 200;
+
+                cloud.style.cssText = `
+                    position: fixed;
+                    top: ${10 + (i % 3) * 20}px;
+                    width: ${cloudWidth}px; height: 80px;
+                    background: url('${cloudSVG}') no-repeat center;
+                    background-size: contain;
+                    z-index: 9999; pointer-events: none; opacity: 0;
+                    transform: translateX(${startX}px);
+                    transition: all 1.5s ease-out;
+                `;
+                document.body.appendChild(cloud);
+
+                setTimeout(() => {
+                    cloud.style.opacity = '0.9';
+                    cloud.style.transform = `translateX(${targetX}px)`;
+                }, i * 150);
+
+                setTimeout(() => {
+                    cloud.style.opacity = '0';
+                    cloud.style.transform = `translateX(${i % 2 === 0 ? viewportWidth + 200 : -200}px)`;
+                    setTimeout(() => cloud.remove(), 1500);
+                }, 5000);
+            }
+
+            setTimeout(() => {
+                rainBackground.style.opacity = '0';
+                setTimeout(() => { rainBackground.remove(); isRaining = false; }, 500);
+            }, 6000);
+        }
+    </script>
+</body>
+
+</html>
